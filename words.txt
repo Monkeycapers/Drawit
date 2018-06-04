@@ -1,0 +1,10 @@
+house
+boat
+car
+farm
+trap
+station
+lighthouse
+school
+turtle
+chill

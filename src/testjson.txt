@@ -1,0 +1,34 @@
+{'argument':'create', 'name':'test'}
+
+{'argument':'create', 'name':'test', 'gamemode':'TicTac'}
+
+{'argument':'create', 'name':'test', 'pass':'123'}
+{'argument':'leave'}
+{'argument':'join', 'name':'test', 'pass':'123'}
+{'argument':'join', 'name':'test'}
+{'argument':'join', 'id':1, 'pass':'123'}
+{'argument':'join', 'id':1}
+{'argument':'lobby', 'type':'chat', 'message':'house'}
+{'argument':'lobby', 'type':'chat', 'message':'aChatMessage'}
+
+{'argument':'lobby', 'type':'drawline', 'lineX':[0, 5, 10], 'lineY':[10, 0, 5], 'cR':0, 'cG':255, 'cB':0, 'cA':255, 'apoints':3}
+
+
+
+server open  game.js:14:13
+From server: {"argument":"addlobbys","lobbys":[{"private":false,"players":0,"name":"Default","id":0,"maxplayers":0,"gamemode":"FreeDraw","status":"FreeDraw"}]}  game.js:20:13
+From server: {"argument":"addusers","users":[{"nick":"guest5","score":0,"id":5}]}  game.js:20:13
+From server: {"argument":"adduser","id":5,"nick":"guest5","score":0}  game.js:20:13
+From server: {"argument":"addlobby","id":0,"players":1,"name":"Default","private":false,"maxplayers":0,"gamemode":"FreeDraw","status":"FreeDraw"}  game.js:20:13
+From server: {"argument":"lobbyopen","id":0,"players":1,"name":"Default","private":false,"maxplayers":0,"gamemode":"FreeDraw","status":"FreeDraw","chatmessage":"Welcome to DrawIt!","candraw":true}  game.js:20:13
+From server: {"argument":"addlobby","id":1,"players":1,"name":"test","private":false,"maxplayers":0,"gamemode":"DrawIt","status":"Waiting"}  game.js:20:13
+From server: {"argument":"lobbyopen","id":1,"players":1,"name":"test","private":false,"maxplayers":0,"gamemode":"DrawIt","status":"Waiting","chatmessage":"Created lobby #1\nLobby name: test","candraw":false}  game.js:20:13
+From server: {"argument":"addlobby","id":0,"players":1,"name":"Default","private":false,"maxplayers":0,"gamemode":"FreeDraw","status":"FreeDraw"}  game.js:20:13
+From server: {"argument":"countdown","time":1}  game.js:20:13
+From server: {"argument":"adduser","id":6,"nick":"Guest","score":0}  game.js:20:13
+From server: {"argument":"addlobby","id":1,"players":2,"name":"test","private":false,"maxplayers":0,"gamemode":"DrawIt","status":"Starting"}  game.js:20:13
+From server: {"argument":"startdrawing","word":"house","time":60}  game.js:20:13
+From server: {"argument":"adduser","id":6,"nick":"Guest","score":0}
+
+Running server:
+java -Djava.ext.dirs=lib Server.DrawServer

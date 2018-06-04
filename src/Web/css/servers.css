@@ -1,0 +1,196 @@
+html * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.buttons {
+    float: left;
+    width: 55px;
+}
+
+#serverbuttonpanel {
+    display: none;
+}
+
+#chatpanel {
+    float: left;
+    width: 230px;
+    margin-left: 8px;
+    border: 2px solid lightslategray;
+    border-radius: 3px;
+    height: auto;
+    margin-top: 10px;
+}
+
+#chatdisplay {
+    width: 100%;
+    height: 96%;
+    overflow-y: scroll;
+    overflow-x: none;
+    word-wrap: break-word;
+}
+
+#chatinput {
+    margin-left: 1px;
+    float: left;
+}
+
+#servertable {
+    float: left;
+    width: 100%;
+    overflow-x: none;
+    overflow-y: scroll;
+}
+
+#servertable-wrapper {
+    width: 60%;
+    height: 100%;
+    float: left;
+    /*border: 2px solid black;
+    border-radius: 3px;*/
+}
+
+#creategame-wrapper {
+    width: 60%;
+    float: left;
+    display: none;
+    /*border: 2px solid black;
+    border-radius: 3px;*/
+    height: 100%;
+}
+
+#previewgame-wrapper {
+    width: 60%;
+    float: left;
+    display: none;
+    /*border: 2px solid black;
+    border-radius: 3px;*/
+    height: 100%;
+}
+
+.tdid {
+    width: 30px;
+}
+
+
+/*.tdname {
+    width: 80%;
+}*/
+
+.tdplayers {
+    width: 50px;
+}
+
+.tdprivate {
+    width: 50px;
+}
+
+.tdgamemode {
+    width: 100px;
+}
+
+#line {
+    background-image: url("../image/LINE_THUMB.jpg");
+}
+
+#freedraw {
+    background-image: url("../image/FREEDRAW_THUMB.jpg");
+}
+
+#undo {
+    background-image: url("../image/UNDO_THUMB.jpg");
+}
+
+#reset {
+    background-image: url("../image/RESET_THUMB.jpg");
+}
+
+#plus {
+    background-image: url("../image/PLUS_THUMB.jpg");
+}
+
+#minus {
+    background-image: url("../image/MINUS_THUMB.jpg");
+}
+
+#menu {
+    background-image: url("../image/MENU_THUMB.jpg");
+}
+
+#back {
+    background-image: url("../image/UNDO_THUMB.jpg");
+}
+
+#join {
+    background-image: url("../image/JOIN_THUMB.jpg");
+}
+
+#leave {
+    background-image: url("../image/RESET_THUMB.jpg");
+}
+
+#create {
+    background-image: url("../image/PLUS_THUMB.jpg");
+}
+
+#preview {
+    background-image: url("../image/PREVIEW_THUMB.jpg");
+}
+
+#invite {
+    background-image: url("../image/INVITE_THUMB.jpg");
+}
+
+#save {
+    background-image: url("../image/PLUS_THUMB.jpg");
+}
+
+.buttons div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    float: left;
+}
+
+.buttons div:hover {
+    border: 3px solid dodgerblue;
+}
+
+.grid tr td {
+    width: 150px;
+    height: 150px;
+    border: 6px solid black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    font-size: 160px;
+}
+
+.grid tr td:hover {
+    border: 3px solid dodgerblue;
+}
+
+.buttons .buttonpressed:hover {
+    border: 3px solid orangered;
+}
+
+.buttons .buttonpressed {
+    border: 3px solid orangered;
+}
+
+.buttons .buttonselected {
+    border: 3px solid lawngreen;
+}
+
+.chat0 {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid gray;
+    /*background-color: gray;*/
+}
+
+.chat1 {
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid gray;
+    /*background-color: white;*/
+}
