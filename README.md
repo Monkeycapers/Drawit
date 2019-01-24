@@ -1,5 +1,8 @@
 # Drawit
-To use, you must have the following libraries on class-path:
+
+This project uses Maven.
+
+For non Maven install, use these dependencies (not supported):
 * Guava (https://github.com/google/guava)
 * Owasp Java Html Sanitizer (https://github.com/OWASP/java-html-sanitizer)
 * Java-WebSocket (https://github.com/TooTallNate/Java-WebSocket)
@@ -9,4 +12,4 @@ To use, you must have the following libraries on class-path:
 
 Launch the server by running the main in DrawServer
 
-Default port is 8081 for the web server
+Default port is 8081 for the web server, connect at localhost:8081/index.html
