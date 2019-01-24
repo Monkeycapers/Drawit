@@ -10,12 +10,9 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.text.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.image.BufferStrategy;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.concurrent.locks.ReentrantLock;
-
-import static com.sun.xml.internal.fastinfoset.alphabet.BuiltInRestrictedAlphabets.table;
 
 /**
  * Created by Evan on 7/1/2017.
