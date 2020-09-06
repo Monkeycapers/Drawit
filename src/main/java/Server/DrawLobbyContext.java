@@ -56,7 +56,7 @@ public class DrawLobbyContext extends LobbyContext {
 
     @Override
     public String getPath() {
-        return "index.html";
+        return "drawit";
     }
 
     @Override

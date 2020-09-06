@@ -45,7 +45,7 @@ public class TicTacContext extends LobbyContext {
 
     @Override
     public String getPath() {
-        return "TicTac.html";
+        return "tictac";
     }
 
     @Override

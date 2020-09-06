@@ -4,6 +4,7 @@ html * {
 
 #canvaspanel {
     float: left;
+    margin-bottom: 15px;
 }
 
 #canvas {

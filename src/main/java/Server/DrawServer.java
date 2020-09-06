@@ -37,7 +37,7 @@ public class DrawServer extends Server {
 
     Jump jump;
 
-    String url = "localhost";
+    String url = "jesty.dev";
 
     Timer discordTimer;
 
@@ -65,7 +65,7 @@ public class DrawServer extends Server {
             System.exit(-1);
         }
 
-        webServer = new WebServer(url, webServerPort);
+        //webServer = new WebServer(url, webServerPort);
         users = new ArrayList<User>();
         lobbys = new Lobbys(inputPolicy);
         jump = new Jump();
@@ -235,7 +235,7 @@ public class DrawServer extends Server {
 
                 System.out.println("User joined the lobby.");
                 updateLobby(lobby, false);
-                String path = url + ":" + webServerPort + "/" + lobby.getLobbyContext().getPath();
+                String path = url + "/" + lobby.getLobbyContext().getPath();
                 if (!lobby.lobbyToken.equals("")) {
                     path += "?id=" + lobby.id + "&token=" + lobby.lobbyToken;
                 }
@@ -254,7 +254,7 @@ public class DrawServer extends Server {
                 lobbys.join(lobby, user, input);
                 System.out.println("User joined the lobby. (Token)");
                 updateLobby(lobby, false);
-                String path = url + ":" + webServerPort + "/" + lobby.getLobbyContext().getPath();
+                String path = url + "/" + lobby.getLobbyContext().getPath();
                 if (!lobby.lobbyToken.equals("")) {
                     path += "?id=" + lobby.id + "&token=" + lobby.lobbyToken;
                 }
@@ -289,7 +289,7 @@ public class DrawServer extends Server {
                 lobbys.create(user, input);
                 System.out.println("Created lobby.");
                 Lobby lobby = user.getCurrentLobby();
-                String path = url + ":" + webServerPort + "/" + lobby.getLobbyContext().getPath();
+                String path = url + "/" + lobby.getLobbyContext().getPath();
                 if (!lobby.lobbyToken.equals("")) {
                     path += "?id=" + lobby.id + "&token=" + lobby.lobbyToken;
                 }
@@ -398,7 +398,7 @@ public class DrawServer extends Server {
                     lobbys.join(r.getLobby(), user, input);
                     System.out.println("User Jumped and joined the lobby.");
                     updateLobby(r.getLobby(), false);
-                    String path = url + ":" + webServerPort + "/" + r.getLobby().getLobbyContext().getPath();
+                    String path = url + "/" + r.getLobby().getLobbyContext().getPath();
                     if (!r.getLobby().lobbyToken.equals("")) {
                         path += "?id=" + r.getLobby().id + "&token=" + r.getLobby().lobbyToken;
                     }
